@@ -6,6 +6,7 @@ vim.opt.scrolloff = 5
 vim.opt.sidescroll = 5
 
 vim.opt.clipboard = "unnamedplus"
+vim.opt.mouse = "a"
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
