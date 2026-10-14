@@ -5,6 +5,7 @@ vim.pack.add({
   "https://github.com/ibhagwan/fzf-lua",
   "https://github.com/nvim-neotest/nvim-nio",
   "https://github.com/mason-org/mason.nvim",
+  "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
   "https://github.com/mfussenegger/nvim-dap",
   "https://github.com/jay-babu/mason-nvim-dap.nvim",
   "https://github.com/igorlfs/nvim-dap-view",

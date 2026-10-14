@@ -11,5 +11,6 @@ require("treesitter")
 require("mini-files")
 require("completion")
 require("lsp")
+require("mason")
 require("dap-config")
 
