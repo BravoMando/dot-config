@@ -1,6 +1,5 @@
 -- ~/.config/nvim/lua/plugins.lua
 vim.pack.add({
-  "https://github.com/catppuccin/nvim.git",
   "https://github.com/nvim-tree/nvim-web-devicons",
   "https://github.com/ibhagwan/fzf-lua",
   "https://github.com/nvim-neotest/nvim-nio",

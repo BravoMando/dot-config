@@ -2,15 +2,15 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-require("plugins")
 require("basic")
 require("colorscheme")
+require("plugins")
 require("devicons")
 require("fuzzy")
 require("treesitter")
 require("mini-files")
 require("completion")
 require("lsp")
-require("mason")
+require("mason-tools")
 require("dap-config")
 

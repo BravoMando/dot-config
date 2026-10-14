@@ -4,11 +4,10 @@ require("mason").setup()
 require("mason-tool-installer").setup({
   ensure_installed = {
     "clangd",
-    "clang-tidy",
-    "clang-format",
-    "neocmakelsp",
-    "cmakelang",
-    "cmakelint",
-    "cpplint",
+--    "neocmakelsp",
+--    "clang-format",
+--    "gersemi",
+--    "cmakelint",
+--    "lua-language-server",
   },
 })
