@@ -31,5 +31,11 @@ vim.opt.listchars = {
   space = '\xC2\xB7',
   trail = '\xE2\x80\xA2',
   eol = '\xE2\x86\xB5',
+  tab   = '\x2D\x3E',
 }
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "make",
+  command = "setlocal noexpandtab softtabstop=0",
+})
 
