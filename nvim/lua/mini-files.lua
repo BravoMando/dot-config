@@ -28,9 +28,18 @@ vim.keymap.set('n', '<leader>e', function()
   else
     MiniFiles.open(vim.fn.getcwd())
   end
-end, { desc = '打开文件浏览器 (当前目录)' })
+end, { desc = 'Open file exploer (Current directory)' })
 
 vim.keymap.set('n', '<leader>E', function()
   MiniFiles.open(vim.fn.getcwd())
-end, { desc = '打开文件浏览器 (工作目录)' })
+end, { desc = 'Open file exploer (Current directory)' })
 
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'MiniFilesBufferCreate',
+  callback = function(args)
+    local buf_id = args.data.buf_id
+    vim.keymap.set('n', '<leader>w', function()
+      MiniFiles.synchronize()
+    end, { buffer = buf_id, desc = 'Synchronize file' })
+  end,
+})
