@@ -1,19 +1,7 @@
 -- ~/.config/nvim/lua/dap-config.lua
-require("mason").setup({
-  ensure_installed = {
-    "clangd",
-    "neocmakelsp",
-    "clang-format",
-    "cmakelang",
-    "cpplint",
-    "cmakelint",
-  },
-  automatic_installation = true,
-})
 require("mason-nvim-dap").setup({
   ensure_installed = {
     "codelldb",
-    "cppdbg",
   },
   automatic_installation = true,
   handlers = {},

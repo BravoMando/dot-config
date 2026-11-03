@@ -27,9 +27,6 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 
 vim.opt.list = true
--- local dot = '\xC2\xB7'
--- local end = '\xE2\x80\xA2'
--- local newline = '\xE2\x86\xB5'
 vim.opt.listchars = {
   space = '\xC2\xB7',
   trail = '\xE2\x80\xA2',
